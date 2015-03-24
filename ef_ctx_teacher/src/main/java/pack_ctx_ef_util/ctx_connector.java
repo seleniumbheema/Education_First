@@ -74,7 +74,7 @@ public class ctx_connector {
 	
 	public void user_details(String object, String text)
 	{
-		driver.findElement(By.id(CONFIG.getProperty(object))).sendKeys(CONFIG.getProperty(text));
+		driver.findElement(By.id(CONFIG.getProperty(object))).sendKeys((text));
 	}
 	
 	public boolean isElementPresent(String object)
